@@ -7,7 +7,9 @@
     "test": "echo \"No test specified\" && exit 0",
     "lint": "eslint {prompt/**,.}/*.js",
     "precommit": "npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "MailOnline <fe@mailonline.co.uk>",
   "homepage": "https://github.com/MailOnline/mol-conventional-changelog",
@@ -22,7 +24,8 @@
     "shelljs": "^0.8.2",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
-    "signale": "^1.1.0"
+    "signale": "^1.1.0",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "lerna": "^2.0.0-rc.5"
@@ -54,5 +57,6 @@
         ]
       }
     }
-  }
+  },
+  "snyk": true
 }
