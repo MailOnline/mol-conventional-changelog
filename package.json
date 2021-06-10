@@ -18,7 +18,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "app-root-path": "^2.0.1",
-    "inquirer": "^3.1.1",
+    "inquirer": "^6.0.0",
     "shelljs": "^0.8.2",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
@@ -32,11 +32,11 @@
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
-    "eslint": "^4.19.1",
+    "eslint": "^5.1.0",
     "eslint-config-mailonline": "^9.0.0",
     "husky": "^0.14.3",
     "lerna": "^2.0.0-rc.5",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^15.7.2"
   },
   "resolutions": {
     "trim-newlines": "^3.0.1"
