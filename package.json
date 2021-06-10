@@ -38,6 +38,9 @@
     "lerna": "^2.0.0-rc.5",
     "semantic-release": "^6.3.6"
   },
+  "resolutions": {
+    "trim-newlines": "^3.0.1"
+  },
   "config": {
     "commitizen": {
       "path": "./index.js",
