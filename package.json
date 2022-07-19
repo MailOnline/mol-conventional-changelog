@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint {prompt/**,.}/*.js",
+    "lint": "eslint **/*.js",
     "precommit": "npm run lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -17,28 +17,29 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "app-root-path": "^2.0.1",
-    "inquirer": "^3.1.1",
-    "shelljs": "^0.8.2",
+    "app-root-path": "^2.2.1",
+    "inquirer": "^7.0.5",
+    "shelljs": "^0.8.5",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
-    "signale": "^1.1.0"
+    "signale": "^1.4.0"
   },
   "optionalDependencies": {
-    "lerna": "^2.0.0-rc.5"
+    "lerna": "^3.6.0"
   },
   "peerDependencies": {
-    "lerna": "^2.0.0-rc.5"
+    "lerna": "^3.6.0"
   },
   "devDependencies": {
-    "commitizen": "^2.9.6",
-    "eslint": "^4.19.1",
-    "eslint-config-mailonline": "^9.0.0",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.0.0",
+    "eslint-config-mailonline": "^9.0.2",
     "husky": "^0.14.3",
-    "lerna": "^2.0.0-rc.5",
-    "semantic-release": "^6.3.6"
+    "lerna": "^3.6.0",
+    "semantic-release": "^17.2.3"
   },
   "resolutions": {
+    "lodash": "^4.17.21",
     "trim-newlines": "^3.0.1"
   },
   "config": {

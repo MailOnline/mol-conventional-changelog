@@ -1,7 +1,7 @@
 /* eslint-disable global-require, import/no-dynamic-require */
 const path = require('path');
-const defaults = require('./defaults');
 const signale = require('signale');
+const defaults = require('./defaults');
 
 const configFiles = [
   'changelog.config.js',
