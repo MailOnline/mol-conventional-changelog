@@ -25,18 +25,18 @@
     "signale": "^1.4.0"
   },
   "optionalDependencies": {
-    "lerna": "^3.6.0"
+    "lerna": "^5.1.8"
   },
   "peerDependencies": {
-    "lerna": "^3.6.0"
+    "lerna": "^5.1.8"
   },
   "devDependencies": {
     "commitizen": "^4.2.4",
     "eslint": "^7.0.0",
     "eslint-config-mailonline": "^9.0.2",
     "husky": "^0.14.3",
-    "lerna": "^3.6.0",
-    "semantic-release": "^17.2.3"
+    "lerna": "^5.1.8",
+    "semantic-release": "^19.0.0"
   },
   "resolutions": {
     "lodash": "^4.17.21",
