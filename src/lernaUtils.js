@@ -2,10 +2,9 @@
 const path = require('path');
 
 const getAllPackages = function () {
-  const Repository = require('lerna/lib/Repository');
-  const PackageUtilities = require('lerna/lib/PackageUtilities');
+  const {Project} = require('lerna/core/project');
 
-  return PackageUtilities.getPackages(new Repository());
+  return new Project().getPackages();
 };
 
 const getChangedPackages = function () {
