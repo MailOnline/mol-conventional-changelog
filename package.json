@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "lint": "eslint **/*.js",
-    "precommit": "npm run lint",
+    "prepare": "husky install",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "MailOnline <fe@mailonline.co.uk>",
@@ -17,12 +17,12 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "app-root-path": "^2.2.1",
-    "inquirer": "^7.0.5",
-    "shelljs": "^0.8.5",
-    "word-wrap": "^1.2.3",
+    "app-root-path": "^3.1.0",
+    "inquirer": "^8.2.3",
     "pad-right": "^0.2.2",
-    "signale": "^1.4.0"
+    "shelljs": "^0.8.5",
+    "signale": "^1.4.0",
+    "word-wrap": "^1.2.3"
   },
   "optionalDependencies": {
     "lerna": "^5.1.8"
@@ -31,10 +31,10 @@
     "lerna": "^5.1.8"
   },
   "devDependencies": {
-    "commitizen": "^4.2.4",
+    "commitizen": "^4.2.5",
     "eslint": "^7.0.0",
     "eslint-config-mailonline": "^9.0.2",
-    "husky": "^0.14.3",
+    "husky": "^8.0.1",
     "lerna": "^5.1.8",
     "semantic-release": "^19.0.0"
   },
