@@ -816,6 +816,15 @@
     npm-package-arg "^8.1.0"
     write-pkg "^4.0.0"
 
+"@lerna/package@5.5.2":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@lerna/package/-/package-5.5.2.tgz#5f692289d1164a4d3456cba0c45ec6ea5fc0f4a7"
+  integrity sha512-/36+oq5Q63EYSyjW5mHPR3aMrXDo6Wn8zKcl9Dfd4bn+w0AfK/EbId7iB/TrFaNdGtw8CrhK+e5CmgiMBeXMPw==
+  dependencies:
+    load-json-file "^6.2.0"
+    npm-package-arg "8.1.1"
+    write-pkg "^4.0.0"
+
 "@lerna/prerelease-id-from-version@5.1.8":
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/@lerna/prerelease-id-from-version/-/prerelease-id-from-version-5.1.8.tgz#83f27db93b19ccb74187e85b8174e4bd4f46e091"
@@ -844,6 +853,25 @@
     dot-prop "^6.0.1"
     glob-parent "^5.1.1"
     globby "^11.0.2"
+    load-json-file "^6.2.0"
+    npmlog "^6.0.2"
+    p-map "^4.0.0"
+    resolve-from "^5.0.0"
+    write-json-file "^4.3.0"
+
+"@lerna/project@^5.1.8":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@lerna/project/-/project-5.5.2.tgz#02d1f031509347e62e665c862dd319703ce5528a"
+  integrity sha512-NtHov7CCM3DHbj6xaD9lTErOnEmz0s+piJP/nVw6aIvfkhvUl1fB6SnttM+0GHZrT6WSIXFWsb0pkRMTBn55Bw==
+  dependencies:
+    "@lerna/package" "5.5.2"
+    "@lerna/validation-error" "5.5.2"
+    cosmiconfig "^7.0.0"
+    dedent "^0.7.0"
+    dot-prop "^6.0.1"
+    glob-parent "^5.1.1"
+    globby "^11.0.2"
+    js-yaml "^4.1.0"
     load-json-file "^6.2.0"
     npmlog "^6.0.2"
     p-map "^4.0.0"
@@ -999,6 +1027,13 @@
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/@lerna/validation-error/-/validation-error-5.1.8.tgz#e12f6ee6bb9bd18bc1f3b2d0ae3045882d2a4f32"
   integrity sha512-n+IiaxN2b08ZMYnezsmwL6rXB15/VvweusC04GMh1XtWunnMzSg9JDM7y6bw2vfpBBQx6cBFhLKSpD2Fcq5D5Q==
+  dependencies:
+    npmlog "^6.0.2"
+
+"@lerna/validation-error@5.5.2":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@lerna/validation-error/-/validation-error-5.5.2.tgz#6ef92fdfab30404fc7d3668499c03c5740158d81"
+  integrity sha512-ZffmtrgOkihUxpho529rDI0llDV9YFNJqh0qF2+doFePeTtFKkFVFHZvxP9hPZPMOLypX9OHwCVfMaTlIpIjjA==
   dependencies:
     npmlog "^6.0.2"
 
@@ -1839,6 +1874,11 @@ argparse@^1.0.7:
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
+
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
 argv-formatter@~1.0.0:
   version "1.0.0"
@@ -3689,6 +3729,13 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
+hosted-git-info@^3.0.6:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-3.0.8.tgz#6e35d4cc87af2c5f816e4cb9ce350ba87a3f370d"
+  integrity sha512-aXpmwoOhRBrw6X3j0h5RloK4x1OzsxMPyxqIHyNfSe2pypkVTZFpEiRoSipPEPlMrh0HW/XsjkJ5WgnCirpNUw==
+  dependencies:
+    lru-cache "^6.0.0"
+
 hosted-git-info@^4.0.0, hosted-git-info@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-4.1.0.tgz#827b82867e9ff1c8d0c4d9d53880397d2c86d224"
@@ -4257,6 +4304,13 @@ js-yaml@^3.13.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+js-yaml@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+  dependencies:
+    argparse "^2.0.1"
 
 jsdoc-type-pratt-parser@1.1.1:
   version "1.1.1"
@@ -5139,6 +5193,15 @@ npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/npm-normalize-package-bin/-/npm-normalize-package-bin-1.0.1.tgz#6e79a41f23fd235c0623218228da7d9c23b8f6e2"
   integrity sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
+
+npm-package-arg@8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-8.1.1.tgz#00ebf16ac395c63318e67ce66780a06db6df1b04"
+  integrity sha512-CsP95FhWQDwNqiYS+Q0mZ7FAEDytDZAkNxQqea6IaAFJTAY9Lhhqyl0irU/6PMc7BGfUmnsbHcqxJD7XuVM/rg==
+  dependencies:
+    hosted-git-info "^3.0.6"
+    semver "^7.0.0"
+    validate-npm-package-name "^3.0.0"
 
 npm-package-arg@^8.0.0, npm-package-arg@^8.1.0, npm-package-arg@^8.1.2, npm-package-arg@^8.1.5:
   version "8.1.5"

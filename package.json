@@ -19,18 +19,17 @@
   "dependencies": {
     "app-root-path": "^2.2.1",
     "inquirer": "^7.0.5",
-    "shelljs": "^0.8.5",
-    "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
-    "signale": "^1.4.0"
-  },
-  "optionalDependencies": {
-    "lerna": "^5.1.8"
+    "shelljs": "^0.8.5",
+    "signale": "^1.4.0",
+    "word-wrap": "^1.2.3"
   },
   "peerDependencies": {
+    "@lerna/project": "^5.1.8",
     "lerna": "^5.1.8"
   },
   "devDependencies": {
+    "@lerna/project": "^5.1.8",
     "commitizen": "^4.2.4",
     "eslint": "^7.0.0",
     "eslint-config-mailonline": "^9.0.2",
