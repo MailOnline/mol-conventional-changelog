@@ -35,7 +35,7 @@
     "eslint-config-mailonline": "^9.0.2",
     "husky": "^0.14.3",
     "lerna": "^5.1.8",
-    "semantic-release": "^19.0.0"
+    "semantic-release": "^20.0.1"
   },
   "resolutions": {
     "lodash": "^4.17.21",
