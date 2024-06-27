@@ -1,20 +1,29 @@
 /* eslint-disable global-require */
 const path = require('path');
+const fs = require('fs');
+const glob = require('glob');
 
 const getAllPackages = () => {
-  const {Project} = require('@lerna/project');
+  const packagePaths = JSON.parse(fs.readFileSync('package.json')).workspaces;
 
-  return new Project().getPackages();
+  const packages = packagePaths.flatMap((packagePath) =>
+    glob.sync(packagePath).map((pkgPath) => ({
+      location: pkgPath,
+      name: JSON.parse(fs.readFileSync(path.join(pkgPath, 'package.json'))).name,
+    }))
+  );
+
+  return packages;
 };
 
-const getChangedPackages = async () => {
+const getChangedPackages = () => {
   const shell = require('shelljs');
 
   const changedFiles = shell.exec('git diff --cached --name-only', {silent: true})
     .stdout
     .split('\n');
 
-  const packages = await getAllPackages();
+  const packages = getAllPackages();
 
   return packages
     .filter((pkg) => {

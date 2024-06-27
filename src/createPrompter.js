@@ -73,15 +73,12 @@ module.exports = (config) => {
       let promptQuestions = createQuestions(config);
 
       if (IS_LERNA_PROJECT) {
-        return getAllPackages().then((allPackagesPromise) => {
-          const allPackages = allPackagesPromise.map((pkg) => pkg.name);
+        const allPackages = getAllPackages().map((pkg) => pkg.name);
+        const changedPackages = getChangedPackages();
+        
+        promptQuestions = promptQuestions.concat(createPackagesQuestion(allPackages, changedPackages));
 
-          return getChangedPackages().then((changedPackages) => {
-            promptQuestions = promptQuestions.concat(createPackagesQuestion(allPackages, changedPackages));
-
-            return returnPrompt(config, promptQuestions, commit);
-          });
-        });
+        return returnPrompt(config, promptQuestions, commit);
       }
 
       return returnPrompt(config, promptQuestions, commit);
