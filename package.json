@@ -25,7 +25,6 @@
     "signale": "^1.4.0",
     "word-wrap": "^1.2.3"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "commitizen": "^4.2.4",
     "eslint": "^7.0.0",
