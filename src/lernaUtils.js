@@ -9,7 +9,7 @@ const getAllPackages = () => {
   const packages = packagePaths.flatMap((packagePath) =>
     glob.sync(packagePath).map((pkgPath) => ({
       location: pkgPath,
-      name: JSON.parse(fs.readFileSync(path.join(pkgPath, 'package.json'))).name,
+      name: JSON.parse(fs.readFileSync(path.join(pkgPath, 'package.json'))).name
     }))
   );
 

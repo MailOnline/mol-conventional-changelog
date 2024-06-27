@@ -75,7 +75,7 @@ module.exports = (config) => {
       if (IS_LERNA_PROJECT) {
         const allPackages = getAllPackages().map((pkg) => pkg.name);
         const changedPackages = getChangedPackages();
-        
+
         promptQuestions = promptQuestions.concat(createPackagesQuestion(allPackages, changedPackages));
 
         return returnPrompt(config, promptQuestions, commit);

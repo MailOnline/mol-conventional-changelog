@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint **/*.js",
+    "lint": "eslint './**/*.js'",
     "precommit": "npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "prepare": "husky",
+    "semantic-release": "semantic-release"
   },
   "author": "MailOnline <fe@mailonline.co.uk>",
   "homepage": "https://github.com/MailOnline/mol-conventional-changelog",
@@ -27,10 +28,15 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.4",
-    "eslint": "^7.0.0",
-    "eslint-config-mailonline": "^9.0.2",
-    "husky": "^0.14.3",
-    "semantic-release": "^19.0.0"
+    "eslint": "8.57.0",
+    "eslint-config-mailonline": "^13.0.2",
+    "husky": "^9.0.11",
+    "semantic-release": "^22.0.12"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
   },
   "resolutions": {
     "lodash": "^4.17.21",
